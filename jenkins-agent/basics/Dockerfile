@@ -1,4 +1,4 @@
-# Start with the official Ubuntu base image
+# Start with the official Ubuntu base image 
 FROM ubuntu:20.04
 
 # Avoid any interactive dialog during package installation
