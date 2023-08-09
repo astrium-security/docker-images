@@ -1,6 +1,6 @@
 FROM jenkins/inbound-agent:alpine as jnlp
 
-FROM hashicorp/terraform:light
+FROM hashicorp/terraform:1.5.2
 
 RUN apk -U add openjdk11-jre
 
