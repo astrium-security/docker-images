@@ -28,4 +28,4 @@ jobs:
       with:
         context: ./jenkins-agent/basics
         push: true
-        tags: ghcr.io/syfrah-consulting/${{ github.repository }}/jenkins-agent:latest
+        tags: ghcr.io/${{ github.repository }}/jenkins-agent:latest
