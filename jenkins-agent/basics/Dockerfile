@@ -12,7 +12,8 @@ RUN apt-get update && \
 
 # Download and install the Jenkins agent jar
 ARG JENKINS_REMOTING_VERSION=4.14
-RUN curl -fsSLo /usr/share/jenkins/agent.jar https://repo.jenkins-ci.org/public/org/jenkins-ci/main/remoting/${JENKINS_REMOTING_VERSION}/remoting-${JENKINS_REMOTING_VERSION}.jar && \
+RUN mkdir -p /usr/share/jenkins && \
+    curl -fsSLo /usr/share/jenkins/agent.jar https://repo.jenkins-ci.org/public/org/jenkins-ci/main/remoting/${JENKINS_REMOTING_VERSION}/remoting-${JENKINS_REMOTING_VERSION}.jar && \
     chmod 755 /usr/share/jenkins && \
     chmod 644 /usr/share/jenkins/agent.jar
 
